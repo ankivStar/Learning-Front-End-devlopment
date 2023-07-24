@@ -1,0 +1,29 @@
+/* type/attribute selector */
+p{
+    color : red;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+/* h4{
+    text-transform: uppercase;
+} */
+
+/* class selector */
+.uppercase{
+    text-transform: uppercase;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+/* id selector */
+#blog-desc{
+    color: #3f6d3d;
+}
+
+/* specificity -> inline css > id > class > type  */

@@ -1,0 +1,23 @@
+/* #logo-img-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../02_HTML/coding-ninjas-logos-idFrWdCkB5.png");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-size: 200px 300px; */
+/* } */
+
+
+#logo-img-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("macbook_mouse.webp");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-size: contain;
+    /* background-size: 200px 300px; */
+    background-attachment:fixed;
+}

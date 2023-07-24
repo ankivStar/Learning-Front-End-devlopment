@@ -1,0 +1,55 @@
+/* .styled-first-letter::first-letter{
+    font-size:1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+} */
+
+.styled-first-letter::first-line{
+    font-size:1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.before::before{
+    content: 'ankit';
+    font-size:1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* .after::after{
+    content: 'ankit';
+    font-size:1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+} */
+
+.after{
+    background-color: lightgray;
+}
+.after::after{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 40px;
+    background-size: contain;
+    background-image: url(../02_HTML/coding-ninjas-logos-idFrWdCkB5.png);
+    background-repeat: no-repeat;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+ul{
+    list-style: none;
+}
+
+li::before{
+    content: '';
+    display: inline-block;
+    height:12px;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../02_HTML/coding-ninjas-logos-idFrWdCkB5.png);
+}

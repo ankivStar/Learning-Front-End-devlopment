@@ -1,0 +1,26 @@
+html{
+    font-size: 30px;
+}
+
+#outer-div1{
+    height: 200px;
+    width: 200px;
+    background-color:blue;
+    /* margin: 4px; */
+    /* margin: auto; */
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#inner-div1{
+    height: 50%;
+    width: 50%;
+    background-color: cyan;
+}
+
+#outer-div2{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    margin-top: 10px4;
+}

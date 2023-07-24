@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .card-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        .card{
+            --padding:1rem ;
+            background-color: white;
+            margin: 1px ;
+            border: 1px solid black;
+            border-radius: .25rem;
+            max-width: 300px;
+            overflow: hidden;
+        }
+        .card.card-shadow{
+            border: none;
+            box-shadow: 2px 2px 5px 3px rgba(0,0,0, .2);
+        }
+        .card-header{
+            padding: var(--padding);
+            padding-bottom: 0;
+            font-size: 1.5rem;
+            margin-bottom: .5rem;
+        }
+        .card-header.card-image{
+            padding: 0;
+            overflow: hidden;
+        }
+        .card-header.card-image>img{
+            display: block;
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            max-height: 200px;
+            object-position: center;
+            transition: 200ms transform ease-in-out;
+        }
+        .card:hover>.card-header.card-image>img{
+            transform: scale(1.025);
+
+        }
+        .card-footer{
+            margin-top: 1rem;
+            padding:var(--padding);
+            padding-top: 0;
+        }
+        .card-body{
+            padding: 0 var(--padding);
+            font-size: .9rem;
+        }
+        .btn{
+            --color:hsl(200,50%,50%);
+            background-color:var(--color);
+            color: white;
+            border: none;
+            font-size: 1rem;
+            padding: .5em .75em;
+            border-radius: .25em;
+            cursor: pointer;   
+        }
+        .btn:hover, .btn:focus{
+            background-color:hsl(200, 61%, 38%);
+        }
+        .btn.btn-outline{
+            background: none;
+            border: 1px solid var(--color);
+            color: var(--color);
+        }
+        .btn.btn-outline:hover, .btn.btn-outline:focus{
+            background: hsl(200,80%,90%);
+        }
+        .btn+.btn{
+            margin-left: .25rem;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="card-grid">
+        <div class="card"> 
+            <div class="card-header">shhhsfd </div>
+            <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, eos beatae. Sed nulla voluptas
+                voluptatibus itaque t illum expedita non?div.car</div>
+            <div class="card-footer">
+                <button class="btn"> Details</button>
+                <button class="btn btn-outline"> Contact seller</button>
+            </div>
+        </div>
+        <div class="card card-shadow"> 
+            <div class="card-header">shhhsfd </div>
+            <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, eos beatae. Sed nulla voluptas
+                voluptatibus itaque t illum expedita non?div.car</div>
+            <div class="card-footer">
+                <button class="btn"> Details</button>
+                <button class="btn btn-outline"> Contact seller</button>
+            </div>
+        </div>
+        <div class="card card-shadow"> 
+            <div class="card-header card-image">
+                <img src="https://housing.com/news/wp-content/uploads/2023/02/Plan-62575DJ_-Beach-Lovers-Dream-Tiny-House-Plan-600x400.jpg"/>
+            </div>
+            <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, eos beatae. Sed nulla voluptas
+                voluptatibus itaque t illum expedita non?div.car</div>
+            <div class="card-footer">
+                <button class="btn"> Details</button>
+                <button class="btn btn-outline"> Contact seller</button>
+            </div>
+        </div>
+        <div class="card card-shadow"> 
+            <div class="card-header card-image">
+                <img src="https://housing.com/news/wp-content/uploads/2023/02/24-Realistic-and-Inexpensive-Alternative-Housing-Ideas.jpg"/>
+            </div>
+            <div class="card-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, eos beatae. Sed nulla voluptas
+                voluptatibus itaque t illum expedita non?div.car</div>
+            <div class="card-footer">
+                <button class="btn"> Details</button>
+                <button class="btn btn-outline"> Contact seller</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
